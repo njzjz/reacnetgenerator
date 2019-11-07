@@ -14,12 +14,12 @@ jinzhe.zeng@rutgers.edu (Jinzhe Zeng), tzhu@lps.ecnu.edu.cn (Tong Zhu)
 
 ## Features
 
-- Processing of MD trajectory containing atomic coordinates or bond orders
-- Hidden Markov Model (HMM) based noise filtering
-- Isomers identifying accoarding to SMILES
-- Generation of reaction network for visualization using force-directed
-  algorithm
-- Parallel computing
+-   Processing of MD trajectory containing atomic coordinates or bond orders
+-   Hidden Markov Model (HMM) based noise filtering
+-   Isomers identifying accoarding to SMILES
+-   Generation of reaction network for visualization using force-directed
+    algorithm
+-   Parallel computing
 
 ## Installation
 
@@ -29,10 +29,10 @@ install ReacNetGenerator with one of the following guides:
 
 ### Building a conda package
 
-1. [Install Anaconda or Miniconda](https://conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html)
-   to obtain conda.
-2. Decompress reacnetgenerator.zip and build in the main directory of
-   ReacNetGenerator:
+1.  [Install Anaconda or Miniconda](https://conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html)
+    to obtain conda.
+2.  Decompress reacnetgenerator.zip and build in the main directory of
+    ReacNetGenerator:
 
 ```bash
 conda config --add channels conda-forge
@@ -43,9 +43,9 @@ reacnetgenerator -h
 
 ### Building a Docker Image
 
-1. [Install Docker](https://docs.docker.com/install/).
-2. Decompress reacnetgenerator.zip and build in the main directory of
-   ReacNetGenerator:
+1.  [Install Docker](https://docs.docker.com/install/).
+2.  Decompress reacnetgenerator.zip and build in the main directory of
+    ReacNetGenerator:
 
 ```bash
 docker build . -t njzjz/reacnetgenerator
@@ -91,7 +91,7 @@ reacnetgeneratorgui
 
 ## Awards
 
-- The First Prize in 2019 (the 11th Session) Shanghai Computer Application
-  Competition for College Students
-- The First Prize in 2019 (the 12th Session) Chinese Computer Design Competition
-  for College Students
+-   The First Prize in 2019 (the 11th Session) Shanghai Computer Application
+    Competition for College Students
+-   The First Prize in 2019 (the 12th Session) Chinese Computer Design Competition
+    for College Students
