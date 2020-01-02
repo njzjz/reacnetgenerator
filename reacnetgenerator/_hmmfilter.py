@@ -22,6 +22,7 @@ import tempfile
 from contextlib import ExitStack
 
 from hmmlearn import hmm
+from joblib import Memory
 
 from .utils import WriteBuffer, appendIfNotNone, bytestolist, listtobytes, run_mp, SharedRNGData
 from .utils_np import idx_to_signal, check_zero_signal
@@ -51,6 +52,8 @@ class _HMMFilter(SharedRNGData):
         self._model.startprob_ = self.p
         self._model.transmat_ = self.a
         self._model.emissionprob_ = self.b
+        mem = Memory(tempfile.gettempdir())
+        self._model.predict = mem.cache(self._model.predict)
 
     def _getoriginandhmm(self, item):
         line_c = item
